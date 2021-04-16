@@ -1,30 +1,29 @@
 import Head from "next/head";
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
-import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+const About = () => {
   return (
     <>
       <Head>
-        <title>Ninja List | Home</title>
+        <title>Ninja List | About</title>
       </Head>
       <div>
-        <h1 className={styles.title}>Home Page</h1>
+        <h1 className={styles.title}>About</h1>
         <p className={styles.text}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-          doloribus, nam adipisci quisquam veritatis iste.
+          doloribus, nam adipisci quisquam veritatis iste, explicabo perferendis
+          dolorum qui, exercitationem soluta distinctio. Itaque magnam explicabo
+          labore, enim a minima accusantium!
         </p>
         <p className={styles.text}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
           doloribus, nam adipisci quisquam veritatis iste, explicabo perferendis
-          dolorum qui, exercitationem soluta distinctio.
+          dolorum qui, exercitationem soluta distinctio. Itaque magnam explicabo
+          labore, enim a minima accusantium!
         </p>
-        <Link href="/ninjas">
-          <a className={styles.btn}>See Ninjas Listing</a>
-        </Link>
       </div>
     </>
   );
-}
+};
+
+export default About;
